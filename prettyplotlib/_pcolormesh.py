@@ -110,7 +110,7 @@ def pcolormesh(*args, **kwargs):
 
     if yticklabels is not None and any(yticklabels):
         if len(args) == 1:
-            yticks = np.arange(1, data.shape[1] + 1)
+            yticks = np.arange(1, data.shape[2] + 1)
         else:
             yticks = []
             for i in np.arange(len(y) - 1):
