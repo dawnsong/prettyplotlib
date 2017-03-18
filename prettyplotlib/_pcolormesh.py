@@ -1,4 +1,4 @@
-__author__ = 'olga'
+__author__ = 'olga, Xiaowei Song'
 
 import numpy as np
 
@@ -98,7 +98,7 @@ def pcolormesh(*args, **kwargs):
 
     if xticklabels is not None and any(xticklabels):
         if len(args) == 1:
-            xticks = np.arange(0.5, data.shape[1] + 0.5)
+            xticks = np.arange(1, data.shape[1] + 1)
         else:
             xticks = []
             for i in np.arange(len(x) - 1):
@@ -110,7 +110,7 @@ def pcolormesh(*args, **kwargs):
 
     if yticklabels is not None and any(yticklabels):
         if len(args) == 1:
-            yticks = np.arange(0.5, data.shape[1] + 0.5)
+            yticks = np.arange(1, data.shape[1] + 1)
         else:
             yticks = []
             for i in np.arange(len(y) - 1):
